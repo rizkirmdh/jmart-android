@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
+    android:background="#B0DFF6"
     tools:context=".PaymentActivity">
 
 
@@ -68,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
         android:layout_marginEnd="5dp"
-        android:backgroundTint="#D5CECE"
+        android:backgroundTint="#4F95EC"
         android:text="Buy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

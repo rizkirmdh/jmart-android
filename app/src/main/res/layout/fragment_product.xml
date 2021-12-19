@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B0DFF6"
     tools:context=".Fragment_Product">
 
     <androidx.cardview.widget.CardView
@@ -65,7 +66,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="#D5CECE"
+                android:backgroundTint="#4F95EC"
                 android:text="PREV"
                 app:iconTint="#F1F0F0"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +82,7 @@
                 android:layout_marginTop="33dp"
                 android:layout_marginEnd="27dp"
                 android:layout_marginBottom="37dp"
-                android:backgroundTint="#D5CECE"
+                android:backgroundTint="#4F95EC"
                 android:text="NEXT"
                 app:iconTint="#F1F0F0"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +95,7 @@
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="#D5CECE"
+                android:backgroundTint="#4F95EC"
                 android:text="GO"
                 app:iconTint="#F1F0F0"
                 app:layout_constraintBottom_toBottomOf="parent"

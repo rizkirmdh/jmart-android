@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0DFF6"
     tools:context=".LoginActivity">
 
     <EditText
@@ -39,7 +40,7 @@
         android:layout_width="93dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#D5CECE"
+        android:backgroundTint="#4F95EC"
         android:text="Login"
         android:textColor="#212121"
         app:iconTint="#F1F0F0"

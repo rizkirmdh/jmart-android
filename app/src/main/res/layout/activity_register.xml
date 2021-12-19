@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0DFF6"
     tools:context=".RegisterActivity">
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#D5CECE"
+        android:backgroundTint="#4F95EC"
         android:text="Register"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0DFF6"
     tools:context=".CreateProductActivity">
 
     <androidx.cardview.widget.CardView
@@ -181,7 +182,7 @@
         android:id="@+id/createcancel"
         android:layout_width="163dp"
         android:layout_height="55dp"
-        android:backgroundTint="#D5CECE"
+        android:backgroundTint="#4F95EC"
         android:text="cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -194,7 +195,7 @@
         android:id="@+id/createbutton"
         android:layout_width="163dp"
         android:layout_height="55dp"
-        android:backgroundTint="#D5CECE"
+        android:backgroundTint="#4F95EC"
         android:text="Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

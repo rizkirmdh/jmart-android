@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0DFF6"
     tools:context=".Fragment_Filter">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -173,7 +174,7 @@
                 android:id="@+id/filterclear"
                 android:layout_width="151dp"
                 android:layout_height="53dp"
-                android:backgroundTint="#D5CECE"
+                android:backgroundTint="#4F95EC"
                 android:text="clear"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -186,7 +187,7 @@
                 android:id="@+id/filterapply"
                 android:layout_width="151dp"
                 android:layout_height="53dp"
-                android:backgroundTint="#D5CECE"
+                android:backgroundTint="#4F95EC"
                 android:text="Apply"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
