@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">jmart-android</string>
+    <string name="name">Name</string>
+    <string name="shipment_plan">Shipment Plan</string>
     <string-array name="shipmentPlans">
         <item>INSTANT</item>
         <item>SAME DAY</item>

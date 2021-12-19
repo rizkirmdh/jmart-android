@@ -12,13 +12,13 @@
         android:id="@+id/titlePayment"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="28dp"
         android:text="Payment"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,14 +27,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
-        android:layout_marginBottom="168dp"
         android:text="Item Selected"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonpay"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titlePayment" />
+        app:layout_constraintTop_toBottomOf="@+id/titlePayment"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,54 +79,50 @@
         android:id="@+id/textView6"
         android:layout_width="206dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="60dp"
         android:layout_weight="1"
-        android:text="Shipment Plan"
+        android:text="@string/shipment_plan"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonpay"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payname" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
 
     <TextView
         android:id="@+id/payname"
         android:layout_width="204dp"
         android:layout_height="41dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="347dp"
         android:layout_weight="1"
-        android:text="Name"
+        android:text="@string/name"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="205dp"
+        android:layout_width="206dp"
         android:layout_height="41dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="100dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/buttonpay"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/payname"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
 
     <TextView
         android:id="@+id/payplan"
         android:layout_width="205dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="59dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/buttonpay"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 

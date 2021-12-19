@@ -23,10 +23,14 @@
         </activity>
         <activity
             android:name=".PaymentActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".ProductDetailActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".CreateProductActivity"
             android:exported="false" />
