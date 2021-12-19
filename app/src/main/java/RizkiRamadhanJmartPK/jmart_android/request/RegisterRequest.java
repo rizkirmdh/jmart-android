@@ -7,8 +7,13 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class ini berfungsi untuk mengirim request ke Back-End
+ * bagian account register
+ */
+
 public class RegisterRequest extends StringRequest {
-    private static final String URL = "http://10.0.2.2:<port>/account/register";
+    private static final String URL = "http://10.0.2.2:8080/account/register";
     private final Map<String, String> params;
 
     public RegisterRequest(String name, String email, String password,

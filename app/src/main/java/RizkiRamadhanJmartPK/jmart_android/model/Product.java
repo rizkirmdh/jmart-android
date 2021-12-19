@@ -1,5 +1,10 @@
 package RizkiRamadhanJmartPK.jmart_android.model;
 
+/**
+ * Class ini berfungsi untuk menerima inputan fotur-fitur dari product
+ * dan return string product
+ */
+
 public class Product extends Serializable{
     public int accountId;
     public ProductCategory category;

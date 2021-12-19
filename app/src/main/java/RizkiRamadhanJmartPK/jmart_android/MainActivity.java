@@ -4,14 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
+
+/**
+ * Class ini berfungsi menampilkan MainActivity
+ * yang terdiri dari product dan filter
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
-        listView = findViewById(R.id.listview);
         prev = findViewById(R.id.prev);
         next = findViewById(R.id.next);
         go = findViewById(R.id.topup);
@@ -39,42 +45,34 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
         VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        vpAdapter.addFragment(new product(), "PRODUCT");
-        vpAdapter.addFragment(new filter(), "FILTER");
+        vpAdapter.addFragment(new Fragment_Product(), "PRODUCT");
+        vpAdapter.addFragment(new Fragment_Filter(), "FILTER");
         viewPager.setAdapter(vpAdapter);
 
-
-//        add.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent createIntent = new Intent(MainActivity.this, CreateProductActivity.class);
-//                startActivity(createIntent);
-//            }
-//        });
-//        aboutMe.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent aboutIntent = new Intent(MainActivity.this, AboutMeActivity.class);
-//                startActivity(aboutIntent);
-//            }
-//        });
-
-//        EnumSet<ProductCategory> all = EnumSet.allOf(ProductCategory.class);
-//        List<ProductCategory> arrayCategory = new ArrayList<>();
-//        for (ProductCategory s:all){
-//            arrayCategory.add(s);
-//        }
-//
-//        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayCategory);
-//        listView.setAdapter(arrayAdapter);
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_list, new Fragment_Product()).commit();
 
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         getMenuInflater().inflate(R.menu.menu, menu);
-
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.add) {
+            startActivity(new Intent(MainActivity.this, CreateProductActivity.class));
+            finish();
+        }
+        if (id == R.id.account) {
+            startActivity(new Intent(MainActivity.this, AboutMeActivity.class));
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

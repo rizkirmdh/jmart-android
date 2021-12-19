@@ -8,8 +8,13 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class ini berfungsi untuk mengirim request ke Back-End
+ * bagian account login
+ */
+
 public class LoginRequest extends StringRequest {
-    private static final String URL = "http://10.0.2.2:<port>/account/login";
+    private static final String URL = "http://10.0.2.2:8080/account/login";
     private final Map<String, String> params;
 
     public LoginRequest(String email, String password, Response.Listener<String> listener,

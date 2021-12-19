@@ -1,17 +1,18 @@
 package RizkiRamadhanJmartPK.jmart_android;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 /**
- * Class ini berfungsi menampilkan data pengguna
+ * Class ini berfungsi untuk menampilkan splashscreen
  */
 
-public class AboutMeActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_me);
+        setContentView(R.layout.activity_splash);
     }
 }

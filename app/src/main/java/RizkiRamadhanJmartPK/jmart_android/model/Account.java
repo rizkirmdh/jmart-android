@@ -3,10 +3,15 @@ package RizkiRamadhanJmartPK.jmart_android.model;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Account extends Serializable implements java.io.Serializable {
+/**
+ * Class ini berfungsi untuk menerima inputan data akun
+ * dan mengecek regex email dan pasword
+ */
 
-    public static final String REGEX_EMAIL = "(?!.*[@]{2})(?!.*[.]{2})[A-Za-z0-9.&_*~]{5,}[@]{1}[A-Za-z0-9]{3,}[.]{1}[A-Za-z0-9-]{3,}$";
-    public static final String REGEX_PASSWORD = "(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{8,}$";
+public class Account extends Serializable{
+
+    public static final String REGEX_EMAIL    = "(?!.\\.{2,})(?!\\.)[0-9A-z.&~*]+@\\w+([.-]?\\w+)+$";
+    public static final String REGEX_PASSWORD = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d][^-\\s]{7,}$";
     public String name;
     public String email;
     public String password;
@@ -22,6 +27,10 @@ public class Account extends Serializable implements java.io.Serializable {
         this.balance = balance;
     }
 
+    public String toString(){
+        return "name: " + this.name + "\nemail: " + this.email + "\npassword: " + this.password;
+    }
+
     public boolean validate() {
         Pattern pattern = Pattern.compile(REGEX_EMAIL);
         Matcher matcher = pattern.matcher(email);
@@ -31,6 +40,11 @@ public class Account extends Serializable implements java.io.Serializable {
         Matcher matcher2 = pattern2.matcher(password);
         boolean foundPassword = matcher2.find();
 
-        return (foundEmail && foundPassword);
+        if (foundEmail == true && foundPassword == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

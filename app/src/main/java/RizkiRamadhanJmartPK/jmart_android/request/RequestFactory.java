@@ -5,6 +5,11 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import java.util.*;
 
+/**
+ * Class ini berfungsi untuk mengirim request ke Back-End
+ * berdasarkan id dan page
+ */
+
 public class RequestFactory
 {
     private static final String URL_FORMAT_ID = "http://10.0.2.2:8080/%s/%d";

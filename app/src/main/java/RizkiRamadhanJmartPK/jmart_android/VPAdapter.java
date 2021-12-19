@@ -8,6 +8,11 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
+/**
+ * Class ini berfungsi sebagai adapter dari viewpager
+ * pada MainActivity
+ */
+
 public class VPAdapter extends FragmentPagerAdapter {
 
     private final ArrayList<Fragment> fragmentArrayList = new ArrayList<>();

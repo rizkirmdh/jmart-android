@@ -181,25 +181,25 @@
         android:id="@+id/createcancel"
         android:layout_width="163dp"
         android:layout_height="55dp"
-        android:text="cancel"
         android:backgroundTint="#D5CECE"
+        android:text="cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/createbutton"
         android:layout_width="163dp"
         android:layout_height="55dp"
-        android:text="Create"
         android:backgroundTint="#D5CECE"
+        android:text="Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.997" />
 </androidx.constraintlayout.widget.ConstraintLayout>
