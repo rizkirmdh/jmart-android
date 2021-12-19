@@ -42,6 +42,8 @@ public class ProductDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProductDetailActivity.this, PaymentActivity.class);
+                intent.putExtra(PaymentActivity.payName, createProductActivity.getName());
+                intent.putExtra(PaymentActivity.payPlan, createProductActivity.getShipmentPlan());
                 startActivity(intent);
                 finish();
             }
